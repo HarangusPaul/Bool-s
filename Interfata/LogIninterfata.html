@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Login to APPelle</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'StyleInterfata.css')}}">
+<body>
+	<div class="loginbox">
+		<img src="{{url_for('static',filename = 'images.jpeg')}}" class="avatar">
+		<h1>Login to APPelle</h1>
+		<h1>{{n}}</h1>
+		<form name="APPelle" action="." method="POST">
+			<p>Username</p>
+			<input type="text" name="username" placeholder="Enter Username">
+			<p>Password</p>
+			<input type="password" name="password" placeholder="Enter Password">
+			<input type="Submit" name="Login" value="Login">
+<!--			<a href="#">Lost your Password ?</a><br>-->
+<!--			<a href="#">Don't have an accont ?</a>-->
+		</form>
+	</div>
+</body>
+</head>
+</html>

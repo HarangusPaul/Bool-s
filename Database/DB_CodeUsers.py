@@ -2,7 +2,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
-cred = credentials.Certificate('bools-db-ae67804c2b63.json')
+cred = credentials.Certificate('D:/Scoala/Bool-s/Database/bools-db-firebase-adminsdk-tsrw7-9299478109.json')
 
 firebase_admin.initialize_app(cred)
 db = firestore.client()
@@ -37,12 +37,13 @@ def create_FacialRecognition(IdUser, IdFacePart, DistanceValue):
     })
 
 
-def create_NewUser(IdUser, Full_Name, Age, Gmail, IdQuestion, IdAnswer, IdPassion, IdFacePart, DistanceValue):
+def create_NewUser(IdUser,Password, Full_Name, Age, Gmail, IdQuestion, IdAnswer, IdPassion, IdFacePart, DistanceValue):
     doc_ref_User = db.collection("Users").document(IdUser)
 
     doc_ref_User.set({
         # u"ID": IdUser,
         u'Full_Name': Full_Name,
+        u'Password': Password,
         u"Age": Age,
         u"Gmail": Gmail
     })
@@ -66,3 +67,13 @@ def update(IdUser, Field, Value, SubColection):
         doc_ref_User.update({
             Field: Value
         })
+
+def database_GetPassword(UserName):
+    emp_ref = db.collection('Users')
+    docs = emp_ref.stream()
+
+    for doc in docs:
+        user = doc.to_dict()
+        if user.get('Full_Name') == UserName:
+            password = user.get('Password')
+            return password

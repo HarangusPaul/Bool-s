@@ -36,6 +36,13 @@ h1{
 	font-size: 22px;
 
 }
+h3{
+    margin: 0;
+	color: #25e6fb;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
 .loginbox p{
 	margin: 0;
 	padding: 0;
