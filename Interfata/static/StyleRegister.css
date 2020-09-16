@@ -1,0 +1,147 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url("sky.jpg");
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+
+}
+.row {
+  display: flex;
+}
+.column {
+  flex: 80%;
+  padding: 10px;
+  height: 360px;
+  border-radius: 15px;
+}
+.loginbox{
+	width: 520px;
+	height: 520px;
+	background: #000;
+	color: #fff;
+	opacity: 0.8;
+	border-radius: 35px;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+
+}
+.avatar{
+	width: 170px;
+	height: 150px;
+	border-radius: 50%;
+	position: absolute;
+	top: -65px;
+	left: 38%;
+
+
+}
+h1{
+	margin: 0 0 20 10;
+	color: #fff;
+	text-align: left;
+	font-size: 20px;
+
+}
+h2{
+    margin: 0 0 10 5;
+	color: #fff;
+	text-align: left;
+	font-size: 20px;
+}
+.loginbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.loginbox input{
+	width: 10%;
+	margin-bottom: 10px;
+
+
+}
+.loginbox input[type="text"], input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #25e6fb;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 14px;
+	width: auto;
+}
+.loginbox input[type="Submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #25e6fb;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 12px;
+	position: absolute;
+  	left: 50%;
+
+
+}
+.loginbox label{
+font-size:14px;}
+
+.loginbox input[type="button"]:hover
+{
+     cursor: pointer;
+     background: #1c11f0;
+     color: #000;
+     margin: 0;
+  	position: absolute;
+  	left: 50%;
+
+
+}
+.loginbox a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgrey;
+
+}
+.loginbox a:hover
+{
+	color: #25e6fb;
+
+}
+* {
+  box-sizing: border-box;
+
+
+}
+.radio{
+font-size:14px;
+}
+
+.button {
+  padding: 10px 60px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #0962EA;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 3px 2px #f78b07;
+
+}
+
+.button:hover {background-color: #0743DE}
+
+.button:active {
+  background-color: #051157;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

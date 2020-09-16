@@ -1,14 +1,14 @@
 body {
 	margin: 0;
 	padding: 0;
-	background: url("Bali-Sunset-JetsetChristina-Single-Fin-Uluwatu-Bali-1200x900.jpg");
+	background: url("sky.jpg");
 	background-size: cover;
 	background-position: center;
 	font-family: sans-serif;
 }
 .loginbox{
 	width: 320px;
-	height: 420px;
+	height: 520px;
 	background: #000;
 	color: #fff;
 	top: 50%;
@@ -17,25 +17,27 @@ body {
 	transform: translate(-50%,-50%);
 	box-sizing: border-box;
 	padding: 70px 30px;
+	border-radius: 25px;
+	opacity: 0.8;
 
 }
 .avatar{
-	width: 100px;
-	height: 100px;
+	width: 160px;
+	height: 160px;
 	border-radius: 50%;
 	position: absolute;
-	top: -50px;
-	left: calc(50% - 50px);
+	top: -65px;
+	left: 28%;
 
 }
 h1{
 	margin: 0;
-	color: #25e6fb;
+	color: #fff;
 	padding: 0 0 20px;
 	text-align: center;
 	font-size: 22px;
-
 }
+
 h3{
     margin: 0;
 	color: #25e6fb;
@@ -43,6 +45,8 @@ h3{
 	text-align: center;
 	font-size: 22px;
 }
+
+
 .loginbox p{
 	margin: 0;
 	padding: 0;
@@ -60,24 +64,26 @@ h3{
 	outline: none;
 	height: 40px;
 	color: #fff;
-	font-size: 16px;
+	font-size: 14px;
 }
 .loginbox input[type="Submit"]
 {
 	border: none;
 	outline: none;
 	height: 40px;
-	background: #25e6fb;
+	background: #0743DE;
 	color: #fff;
 	font-size: 18px;
 	border-radius: 20px;
+	border-radius: 15px;
+	box-shadow: 3px 2px #f78b07;
 
 }
 .loginbox input[type="Submit"]:hover
 {
      cursor: pointer;
-     background: #1c11f0;
-     color: #000;
+     background: #0962EA;
+     color: #fff;
 }
 .loginbox a{
 	text-decoration: none;
@@ -88,13 +94,6 @@ h3{
 }
 .loginbox a:hover
 {
-	color: #25e6fb;
+	color: #0743DE;
 
 }
-
-
-
-
-
-
-

@@ -37,11 +37,12 @@ def create_FacialRecognition(IdUser, IdFacePart, DistanceValue):
     })
 
 
-def create_NewUser(IdUser,Password, Full_Name, Age, Gmail, IdQuestion, IdAnswer, IdPassion, IdFacePart, DistanceValue):
+def create_NewUser(IdUser, Full_Name, Age,Password, Gmail, IdQuestion, IdAnswer, IdPassion, IdFacePart, DistanceValue):
     doc_ref_User = db.collection("Users").document(IdUser)
 
     doc_ref_User.set({
         # u"ID": IdUser,
+        u'UserName':IdUser,
         u'Full_Name': Full_Name,
         u'Password': Password,
         u"Age": Age,
@@ -74,6 +75,18 @@ def database_GetPassword(UserName):
 
     for doc in docs:
         user = doc.to_dict()
-        if user.get('Full_Name') == UserName:
+        username = str(user.get('UserName'))
+        if username == UserName:
             password = user.get('Password')
             return password
+
+def validate_existence(UserName):
+    emp_ref = db.collection('Users')
+    docs = emp_ref.stream()
+
+    for doc in docs:
+        user = doc.to_dict()
+        username = str(user.get('UserName'))
+        if username == str(UserName):
+            return 1
+    return 0
