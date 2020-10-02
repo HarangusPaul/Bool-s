@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {margin:0;}
+
+/* Style the body */
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  background-image: ;
+  background-size: 100% 100%;
+
+
+
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 120px;
+  text-align: center;
+  background-image: url("./static/WWHOMEPAGE.jpg");
+  background-size: 100% 100%;
+  color: white;
+
+}
+
+
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #001c4d;
+  position: -webkit-sticky;
+   position: sticky;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.footerbar {
+  overflow: hidden;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+
+}
+
+.footerbar a {
+  float: left;
+  display: block;
+  color: #0D3C50;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Right-aligned link */
+.footerbar a.right {
+  float: right;
+}
+
+.footerbar a:hover {
+
+  color: #FF6701;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+  font-weight: bold;
+}
+
+
+.navbar a:hover {
+    color: #Fcab00;
+}
+
+.main {
+  padding: 16px;
+  margin: 30px 50px 150px 50px ;
+  height: auto; /* Used in this example to enable scrolling */
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+.main t{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color:black;
+
+}
+
+    </style>
+</head>
+<body>
+
+
+    <div class="header">
+    </div>
+
+    <div style="z-index: 9999;" class="navbar">
+        <a href="http://127.0.0.1:5000">Home</a>
+<!--        <a href="http://127.0.0.1:5000/questions">Questions Page</a>-->
+<!--        <a href="http://127.0.0.1:5000/scan">Facial Scan Page</a>-->
+<!--        <a href="http://127.0.0.1:5000/acc">Account</a>-->
+		<h1 style="text-align: right;font-size:20px;color:white;">{{n}}</h1>
+    </div>
+
+   <div class="main">
+
+        <br>
+           <h4>TERMS OF USE OF THE WEB APP APPelle</h4><br>
+
+<h5>STARTING WITH [30.08.2020]</h5><br>
+
+<t>Welcome to the dedicated website www.numele.ro (hereinafter referred to as "Web App").</t><br>
+
+<t>Please read these Terms of Use that govern the use of this Web App (hereinafter referred to as the "Terms of Use"). By using this Web App you agree to the content of the Terms of Use.</t><br>
+
+<t>For any questions regarding the use of the Web App, you can contact us at the following address: dpitbools@gmail.com.</t><br>
+
+
+<h5>1. ACCESS THE WEB APP</h5><br>
+
+<t>To access and use this Web App, you must be 16 years old or older. If you are under 16, you will need the prior approval of your parents or guardians.</t><br>
+
+<t>You can use the Web App for free, as long as you sign in or create an account.</t><br>
+
+<t>Any other additional costs related to the use of the internet will be fully borne by you.</t><br><br>
+
+<h5>2. INTELLECTUAL PROPERTY</h5><br>
+
+
+<t><strong>a. Intellectual property rights</t></strong><br>
+<t>The development of this Web App requires significant investment. The Web App and each of its components (eg trademarks, images, text, video files, etc.) are protected by intellectual property rights. No use, reproduction or representation of the Web App (in whole or in part) on any media, for any other purpose, including but not limited to commercial purposes, is permitted.</t><br>
+
+<t>We may provide you with content included in this Web App that you are authorized to download (hereinafter referred to as "Downloadable Content"). We grant you a non-exclusive and non-transferable right to use the downloadable content for personal and private use, free of charge and for the duration of the legal protection conferred by intellectual property rights, as defined by applicable international laws and treaties. Any reproduction, representation, modification or distribution of the content of the Web App is prohibited. By downloading or using such downloadable content, you agree to use it in accordance with these Terms of Use.</t><br>
+
+<t><strong>b. Third party rights</t></strong><br>
+<t>We remind you that you will need to obtain all necessary authorizations and rights from any relevant rights holders in connection with any content you wish to post on the Site, including any intellectual property and / or literary, artistic and / or proprietary rights. or industrial, as well as personal or advertising rights (including the right to use someone else's image), to allow you to use this content. For example, you will obtain rights to any content (especially photos) that show recent architectural elements, advertising patterns, or clothing patterns that may appear (acronyms, logos, etc.).</t><br>
+
+<t><strong>c. User generated content</t></strong><br>
+<t>We can provide through this site a space dedicated to user-generated content, such as text, photos, videos, opinions, etc. (hereinafter referred to as "User Generated Content").</t><br>
+
+<t>By posting User-Generated Content through the Web App you provide us with a free, irrevocable, non-exclusive license worldwide (global) and for the legal period of protection of intellectual property rights (perpetual), as defined (including any additional regulations or subsequent amendments), APPelle having the right to use, copy, modify, adapt, edit, distribute, translate, create derivative works, integrate the content into other works, distribute, publish and exploit other such content and / or incorporate such content in any form, medium or technology, in whole or in part.</t><br>
+
+<t>Such use shall be authorized for all purposes of corporate or external communication, corporate or financial, advertising and for all public relations, for historical or archival purposes, on the following media:</t><br>
+
+<t>Electronic, IT, digital, multimedia, Internet and Intranet publications, via any Web App (regardless of site and / or environment, including social networks such as Facebook, Twitter, YouTube or Dailymotion)</t><br>
+
+
+<t>This authorization allows us to adapt your content as originally intended and / or to clarify the user-generated content as we deem necessary, provided that such user-generated content does not alter your image. or words.</t><br>
+
+<t>In addition, the use of user-generated content may involve the use of anonymized information, such as your city, country or age, and / or, if you have expressly authorized it, information to identify you, such as your name or your pseudonym.</t><br>
+
+
+<t>Any such User Generated Content that you may post through this Web App will be at your sole discretion. However, we would like to remind you that such user-generated content may not violate applicable law, accepted standards of morality or the principles set forth in this document. In this regard, we reserve the right to remove at any time any such user-generated content that does not comply with these Terms of Use, including the Code of Conduct.</t><br>
+<t>In addition, if you access user-generated content created by another user, you will be required to respect the rights of that user and, in particular, not to reproduce or broadcast that content published through other means of communication without the prior consent of that user.</t><br><br>
+
+<h5>3. Code of conduct</h5><br>
+
+<t>We uphold the values ​​of tolerance and respect for others.</t><br>
+
+<t>For this reason, by using this Web App you agree to:</t><br>
+
+<t>Do not make comments that are racist, violent, xenophobic, malicious, insulting, obscene or against the law.</t><br>
+<t>Do not disseminate any content that may be harmful, defamatory, unauthorized, malicious or that violates your rights of confidentiality or publicity, incites violence, racial or ethnic hatred or qualifies as indecent or incites you to commit certain crimes;</t><br>
+<t>Do not use the Web App for political, propaganda or proselytizing purposes;</t><br>
+<t>Do not publish any advertising content or promote any products and / or services that compete with the brand (s) displayed on the site;</t><br>
+<t>Do not use the Web App for any purpose other than intended, including by using it as a marriage service;</t><br>
+<t>Do not disseminate any information that may allow, directly or indirectly, the nominal and specific identification of a person without his or her prior and express consent, such as surname, mailing address, e-mail address, telephone number;</t><br>
+<t>Do not disseminate any information or content that may be offensive.</t><br>
+<t>Do not intimidate or harass other people;</t><br>
+<t>Do not engage in any illegal activity, including infringement of anyone's rights in software, trademarks, photos, images, text, videos, etc .;</t><br>
+<t>Do not disseminate content (including photos and videos) that illustrates minors.</t><br>
+<t>If you discover such user-generated content that supports crimes against humanity, encourages racial hatred and / or violence, or relates to child pornography, you will notify us immediately at the following email address dpitbools@gmail.com specifying in the e-mail the date you discovered the mentioned content, your identity, the URL address, the description of the disputed content and the username of its author.</t><br>
+
+<t>If you believe that any user-generated content violates the principles listed above and your rights (e.g., any breach of the Terms of Use, insults, breach of privacy), you may send a notification to the following email address: dpitbools@gmail.com specifying in the e-mail the date on which you discovered the mentioned content, your identity, the URL address, the description of the disputed content and the username of its author.</t><br>
+
+<t>Please include in the mentioned communication the following details:
+date of notification;</t><br>
+<t>the name and address of the addressee or, in the case of a legal person, his name and registered office;</t><br>
+<t>description and specific location of the reported facts (for example, the URL link of the reported content;</t><br>
+<t>the reasons why such content should be removed, including an indication of the legal provisions and qualifications (justifications) applicable to the facts;</t><br>
+<t>a copy of any correspondence sent to the author or publisher of the information or activities reported requesting its discontinuance, relocation or modification, if any.</t><br><br>
+
+<h5>4. INFORMATION ON THE Web App</h5><br>
+
+<t><strong>a. General conditions</strong></t><br>
+<t>We remind you that inaccurate information and omissions may be available on this Web App, in particular due to third parties. We are committed to eliminating inaccuracies or completing such information on the Web App as soon as possible.</t><br>
+
+<t><strong>b. Advanced diagnostic tools</strong></t><br>
+<t>The advice offered on this Web App and / or the diagnostic tools that can be made available are only simulations designed to obtain expert advice from psychology.</t><br>
+
+       <t>The information they provide is for strictly indicative purposes and will in no way replace medical diagnosis or clinical consultation, nor will it replace medical treatment.</t><br>
+
+<t>Consequently, we cannot guarantee that the advice resulting from the use of these tools will lead to the resolution of your situation and we do not assume any responsibility for any use you assign to these tools.</t><br>
+
+<t>For any additional information or in case of uncertainty, we recommend that you consult your doctor.</t><br>
+
+<t><strong>c. Hypertext links</strong></t><br>
+<t>Hypertext links included in the Web App may lead you to Web Apps published by third parties, the content of which we cannot control. Accordingly, to the extent that these hypertext links have been included on this site for the sole purpose of facilitating your Internet browsing experience, searching third-party Web Apps will be your decision and you will be responsible of this decision.</t><br><br>
+
+<h5>5. PERSONAL DATA</h5><br>
+
+<t>When you access our site or interact with us in any way through the site, we process your personal data. More details regarding the processing of your personal data, the types of personal data, the purposes and grounds of processing, as well as your rights in relation to the personal data processed, you will find in our data processing policy the persons you can access here. For any additional information, please email us at dpitbools@gmail.com.</t><br><br>
+
+<h5>6. COOKIES</h5><br>
+
+<t>Cookies are small files that are left on your device while browsing the Web App (such as searched pages, access date and time, etc.) and can be read whenever you access the same Web App (hereinafter referred to as "Cookies").</t><br><br>
+
+<t>For more information on cookies, please see the cookie table here.</t><br>
+
+<h5>7. MODIFICATION OF THE SITE AND TERMS OF USE</h5><br>
+
+<t>We may change the content and information included on the Web App, as well as these Terms of Use, in particular for the purpose of complying with any applicable laws and / or regulations and / or to improve the Web App.</t><br>
+
+<t>Any changes will be published on the Web App before it takes effect in accordance with these Terms of Use. Unless the change requires your express approval, your continued use of the Site will be deemed your acceptance of the new Terms of Use.</t><br><br>
+
+<h5>8. CREATION AND EDITING OF THE SITE</h5><br>
+
+<t>The Web App was designed by: Bools, a team from the Discover Your Passion in IT Association.</t><br><br>
+
+<h5>9. WARNING</h5><br>
+
+<t>We will make every reasonable effort to maintain access to the Web App and downloadable content at all times. However, we cannot guarantee the permanent availability and accessibility of the Web App. We may need to temporarily suspend access to all or part of the Web App, especially for technical maintenance purposes.</t><br>
+
+<t>Next we will specify that the internet and IT or telecommunications networks are not error-free and that interruptions and malfunctions may occur. We cannot provide any warranty in this regard and, therefore, cannot be held liable for any damages that may be related to the use of the Internet and IT or telecommunications networks, including, but not limited to:</t><br>
+
+<t>- Improper transmission and / or reception of any data and / or information via the Internet;</t><br>
+
+<t>- Any external intrusions or computer viruses;</t><br>
+
+<t>- Any improper reception equipment or improper communication networks; as well as</t><br>
+
+<t>- Any malfunction regarding internet reception, which may impede the proper functioning of the Web App.</t><br>
+
+<t>Finally, our liability is limited to direct damages, excluding any other damage or loss. Specifically, any indirect damages relating to, but not limited to, any loss of profit, income or goodwill.</t><br><br>
+
+<h5>10. APPLICABLE LAW</h5><br>
+
+<t>These Terms of Use shall be construed in accordance with the laws of Romania.</t><br>
+
+<t>For any problems, please contact Customer Service:</t><br>
+
+
+
+
+
+
+
+
+
+
+   </div>
+        </div>
+        </div>
+   </div>
+
+
+   <div class="footer">
+        <div class="footerbar">
+        <a href="#Copyright">Copyright @APPelle 2020</a>
+        <a href="http://127.0.0.1:5000/terms" class="right">Terms and conditions</a>
+        <a href="http://127.0.0.1:5000/personaldata" class="right">Protection of personal data</a>
+    </div>
+    </div>
+</body>
+</html>

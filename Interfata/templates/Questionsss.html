@@ -2,22 +2,23 @@
 <head>
 <style>
 body {
-  font-family: "Times New Roman", Times, serif;
-  margin: 0;
-  background-image: url("./static/WALLPAPER.jpg");
-  background-size: 100% 100%;
-  justify-content: center;
-  min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	background: url("./static/WALL1.jpg");
+	background-size: cover;
+	background-position: center;
+	font-family: "Times New Roman", Times, serif;
 }
 /* Header/logo Title */
 .header {
   padding: 120px;
   text-align: center;
-  background-image: url("./static/WWHOMEPAGE.jpg");
+  background-image: url("./static/BLUEWW.jpg");
   background-size: 100% 100%;
   color: white;
 
 }
+
 
 
 /* Increase the font size of the heading */
@@ -135,18 +136,18 @@ p {
 }
 input[type=submit] {
   width: 100%;
-  background-color: #ff8000;
-  color: white;
-  border-radius: 20px;
-  padding: 14px 20px;
 
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
   border: none;
   cursor: pointer;
 
 }
 
 input[type=submit]:hover {
-  background-color: #053D8A;
+  background-color: #f2820a;
 
 }
 input[type=text], select {
@@ -224,7 +225,7 @@ input[type=text], select {
 .main {
   padding: 16px;
   margin: 30px 50px 150px 50px ;
-  height: 115%; /* Used in this example to enable scrolling */
+  height: auto; /* Used in this example to enable scrolling */
 }
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
@@ -288,12 +289,11 @@ h1{
     <div class="header">
     </div>
 
-    <div style="z-index: 9999;" class="navbar">
-        <a href="http://127.0.0.1:5000">Home</a>
-        <a href="http://127.0.0.1:5000/questions">Questions Page</a>
-        <a href="http://127.0.0.1:5000/scan">Facial Scan Page</a>
-        <a href="http://127.0.0.1:5000/acc">Account</a>
-		<h1 style="text-align: right;font-size:20px;color:white;">{{n1}}</h1>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <h1 style="text-align: right;font-size:20px;color:white;">{{n}}</h1>
+
+
     </div>
     <br>
     <h1>{{n}}</h1>
@@ -322,48 +322,48 @@ h1{
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">No
-                    <input type="radio" name="yes/no1" value="No">
+                    <input type="radio" name="yes/no1" value="I am not punctual">
                     <span class="checkmark"></span>
                 </label>
             <p>4. Do you take offence easily?</p>
                 <label class="container">Yes
-                    <input type="radio" name="yes/no2" value="Yes">
+                    <input type="radio" name="yes/no2" value="I take offense very easy">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">No
-                    <input type="radio" name="yes/no2" value="No">
+                    <input type="radio" name="yes/no2" value="I take offense very badly">
                     <span class="checkmark"></span>
                 </label>
             <p>5. Would you be friend with someone like you?</p>
                 <label class="container">Yes
-                    <input type="radio" name="yes/no3" value="Yes">
+                    <input type="radio" name="yes/no3" value="I am sociable">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">No
-                    <input type="radio" name="yes/no3" value="No">
+                    <input type="radio" name="yes/no3" value="I am not sociable">
                     <span class="checkmark"></span>
                 </label>
             <p>6. Would you want to be famous?</p>
                 <label class="container">Yes
-                    <input type="radio" name="yes/no4" value="Yes">
+                    <input type="radio" name="yes/no4" value="I would like to be famous">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">No
-                    <input type="radio" name="yes/no4" value="No">
+                    <input type="radio" name="yes/no4" value="I would not rezist to be famous">
                     <span class="checkmark"></span>
                 </label>
             <p>7. Would you open an envelope that has the date and the cause of your death inside?</p>
                 <label class="container">Yes
-                    <input type="radio" name="yes/no5" value="Yes">
+                    <input type="radio" name="yes/no5" value="I would love to be aware of my future">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">No
-                    <input type="radio" name="yes/no5" value="No">
+                    <input type="radio" name="yes/no5" value="I don't want to be aware of my future">
                     <span class="checkmark"></span>
                 </label>
             <p>8. Would you sacrifice yourself in order to save someone close's life?</p>
                 <label class="container">Yes
-                    <input type="radio" name="yes/no6" value="Yes">
+                    <input type="radio" name="yes/no6" value="I ">
                     <span class="checkmark"></span>
                 </label>
                 <label class="container">No
@@ -378,11 +378,11 @@ h1{
         <br>
         <p>9. Some text..</p>
             <label class="container">Introvert
-                <input type="radio" checked="checked" name="radio" value="Introvert">
+                <input type="radio" checked="checked" name="radio" value="Im introvert">
                 <span class="checkmark"></span>
             </label>
             <label class="container">Extrovert
-                <input type="radio" checked="checked" name="radio" value="Extrovert">
+                <input type="radio" checked="checked" name="radio" value="Im extrovert">
                 <span class="checkmark"></span>
             </label>
         <br><br>
@@ -392,42 +392,38 @@ h1{
         <p>11. Select one color of these 5:</p>
             <img src="./static/color.png" class="avatar" style="width:100%;">
             <label class="container">Red
-                <input type="radio" name="color" value="Red">
+                <input type="radio" name="color" value="My favorite color is Red">
                 <span class="checkmark"></span>
             </label>
             <label class="container">Yellow
-                <input type="radio" name="color" value="Yellow">
+                <input type="radio" name="color" value="My favorite color is Yellow">
                 <span class="checkmark"></span>
             </label>
             <label class="container">Blue
-                <input type="radio" name="color" value="Blue">
+                <input type="radio" name="color" value="My favorite color is Blue">
                 <span class="checkmark"></span>
             </label>
             <label class="container">Turquoise
-                <input type="radio" name="color" value="Turquoise">
+                <input type="radio" name="color" value="My favorite color is Turquoise">
                 <span class="checkmark"></span>
             </label>
             <label class="container">Black
-                <input type="radio" name="color" value="Black">
+                <input type="radio" name="color" value="My favorite color is Black">
                 <span class="checkmark"></span>
             </label>
             <br><br>
-            <input type="submit" name="Save" value="Submit">
+            <input type="Submit" name="Save" value="Save">
     </div1>
-
     </div>
-        <p style="margin :0 10 0; font-size: 14px;"> 1. Make sure you fill in all the fields with relevant information for an optimal result.</p>
-        <br><p style="margin :0 10 0; font-size: 14px;""> 2. When you're done, click the submit button.</p>
     </div>
-    </form>
 
     <div class="footer">
         <div class="footerbar">
         <a href="#Copyright">Copyright @APPelle 2020</a>
-        <a href="http://127.0.0.1:5000/terms" class="right">Terms and conditions</a>
-        <a href="http://127.0.0.1:5000/personaldata" class="right">Protection of personal data</a>
-    </div></div>
-
+        <a href="#T&C" class="right">Terms and conditions</a>
+        <a href="#Popd" class="right">Protection of personal data</a>
+    </div>
+        </form>
 </body>
 
 </html>

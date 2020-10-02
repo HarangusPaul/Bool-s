@@ -8,14 +8,11 @@
 
 /* Style the body */
 body {
-  font-family: sans-serif;
+  font-family: "Times New Roman", Times, serif;
   margin: 0;
-  background-image: ;
+  background-image: url("./static/WALLPAPER.jpg");
   background-size: 100% 100%;
-
-
-
-  justify-content: center;
+justify-content: center;
   min-height: 100vh;
 }
 
@@ -23,7 +20,7 @@ body {
 .header {
   padding: 120px;
   text-align: center;
-  background-image: url("./Static/BLUEWW.jpg");
+  background-image: url("./static/WWHOMEPAGE.jpg");
   background-size: 100% 100%;
   color: white;
 
@@ -154,6 +151,7 @@ body {
 	border-radius: 20px;
 	border-radius: 15px;
 	box-shadow: 3px 2px #f78b07;
+	font-family: "Times New Roman", Times, serif;
 
 }
 .loginbox input[type="Submit"]:hover
@@ -161,6 +159,7 @@ body {
      cursor: pointer;
      background: #0962EA;
      color: #fff;
+     font-family: "Times New Roman", Times, serif;
 }
 
     </style>
@@ -171,13 +170,12 @@ body {
     <div class="header">
     </div>
 
-    <div class="navbar">
-        <a href="#home">Home</a>
-
-
-
-        <a href="http://127.0.0.1:5000/login" class="right">Login</a>
-        <a href="http://127.0.0.1:5000/reg" class="right">Sing In</a>
+    <div style="z-index: 9999;" class="navbar">
+        <a href="http://127.0.0.1:5000">Home</a>
+        <a href="http://127.0.0.1:5000/questions">Questions Page</a>
+        <a href="http://127.0.0.1:5000/scan">Facial Scan Page</a>
+        <a href="http://127.0.0.1:5000/acc">Account</a>
+		<h1 style="text-align: right;font-size:20px;color:white;">{{n}}</h1>
     </div>
 
    <div class="main">
@@ -185,17 +183,17 @@ body {
         <div class="column">
                 <img src={{url_for('static',filename = 'GIFWALL.gif')}}>
         </div>
-        <div class="column" style="background-color:#fff;">
+        <div class="column" style="background:#000000; opacity:0.7; border-radius: 20px;">
 
-        <h2 style="color:#0963b8;"> Through the facial recognition system and questionnaires helps you to discover yout personality. </h2>
+        <h2 style="color:#0963b8;opacity:110%"> Through the facial recognition system and questionnaires helps you to discover yout personality. </h2>
         <br>
-        <h3 style="color:#022140">Support & Suggestion & Solution</h3>
+        <h3 style="color:#022140; opacity:110%">Support & Suggestion & Solution</h3>
         <br><br>
         <div class="loginbox">
             <input type="Submit" name="solutions" value="I WANT ACCESS TO SOLUTIONS">
         </div>
         <br>
-            <h3>You are just a click away from the solutions to the problems you may encounter in communication, socialization and integration into groups of friends.</h3>
+            <h3 style="color:#ffffff;opacity:110%">You are just a click away from the solutions to the problems you may encounter in communication, socialization and integration into groups of friends.</h3>
         </div>
         </div>
         </div>

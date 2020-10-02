@@ -1,0 +1,300 @@
+<html>
+<head>
+</head>
+
+<body>
+
+    <div class="header">
+    </div>
+
+    <div style="z-index: 9999;" class="navbar">
+        <a href="http://127.0.0.1:5000">Home</a>
+        <a href="http://127.0.0.1:5000/questions">Questions Page</a>
+        <a href="http://127.0.0.1:5000/scan">Facial Scan Page</a>
+        <a href="http://127.0.0.1:5000/acc">Account</a>
+        <a class="right">{{n1}}</a>
+
+    </div>
+    <h2>{{n}}</h2>
+
+    <div class="loginbox">
+        <div class="center">
+
+        <h4><strong>Instructions for taking the photo for optimal analysis</strong></h4>
+        <div class="rowrow" >
+            <div class="center"style="width: 100%;">
+            <div0 class="columncolumn" style="background-color:#FE8A02;">
+                <img src="https://www.vichy.ro/resources/int-fr/SkinAnalyses/images/v_carrousel-step-1.jpg" style="border-radius: 10px;   display: block;
+                        margin-left: auto;margin-right: auto;} "width="190" height="190">
+                <p>1. Remove the glasses and remove the makeup. </p>
+            </div0>
+            <div1 class="columncolumn" style="background-color:#0749E5;">
+                <img src="https://www.vichy.ro/resources/int-fr/SkinAnalyses/images/v_carrousel-step-2.jpg" style="border-radius: 10px;  display: block;
+                        margin-left: auto;margin-right: auto;}"width="190" height="190">
+                <p>2. Look forward.</p>
+            </div1>
+            <div2 class="columncolumn" style="background-color:#021238;">
+                <img src="https://www.vichy.ro/resources/int-fr/SkinAnalyses/images/v_carrousel-step-3.jpg" style="border-radius: 10px;  display: block ;opacity: 100%;
+                        margin-left: auto;margin-right: auto;}"width="190" height="190">
+                <p>3. Keep neutral expressions and use natural light.</p>
+            </div2>
+           </div>
+        </div>
+<br>
+            <form id="package_form" method="POST" enctype="multipart/form-data">
+            <p><input id="upload_button" type="file" class="btn btn-default btn-xs" name="file"></p>
+            <p><input id="submit_button" type="submit" class="btn btn-success" value="Upload"></p>
+            </form>
+        </form>
+    <br><p>4. Your photo will be analyzed and compared with over 200 classified photos with an algorithm based on artificial intelligence.</p>
+     <p>5. For consistent results over time, we recommend taking a selfie with a state-of-the-art smartphone..</p>
+
+
+        </div></div></div>
+
+
+
+
+  <div class="footer">
+        <div class="footerbar">
+        <a href="#Copyright">Copyright @APPelle 2020</a>
+        <a href="http://127.0.0.1:5000/terms" class="right">Terms and conditions</a>
+        <a href="http://127.0.0.1:5000/personaldata" class="right">Protection of personal data</a>
+		</div>
+	</div>
+
+</body>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("./static/WALLPAPER.jpg");
+	background-size: cover;
+	background-position: center;
+	font-family: "Times New Roman", Times, serif;
+
+
+}
+.center {
+  margin: auto;
+  width: 90%;
+    text-align: center;
+  padding: 10px;
+}
+.columncolumn
+{
+  float: left;
+   width: 31%;
+   height:45%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5 5 5 5;
+  opacity: 0.8;
+
+
+  }
+
+/* Clear floats after the columns */
+.rowrow:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 120px;
+  text-align: center;
+  background-image: url("./static/WWHOMEPAGE.jpg");
+  background-size: 100% 100%;
+  color: white;
+
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #001c4d;
+  position: -webkit-sticky;
+   position: sticky;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.footerbar {
+  overflow: hidden;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+
+}
+
+.footerbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Right-aligned link */
+.footerbar a.right {
+  float: right;
+}
+
+.footerbar a:hover {
+  color: #FF6701;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+  font-weight: bold;
+}
+
+
+.navbar a:hover {
+    color: #Fcab00;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.avatar{
+	width: 400px;
+	height: 80px;
+}
+
+h2 {
+  text-align: center;
+  color: #fa7d09;
+}
+
+p {
+  text-align: justify;
+  letter-spacing: 3px;
+   text-align: center;
+  color: #fff;
+  font-size:16px;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #DE7900;
+  color: white;
+  border-radius: 20px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+input[type=submit]:hover {
+  background-color: #053D8A;
+
+}
+input[type=text], select {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.loginbox{
+
+	height: 100%;
+
+	color: #fff;
+	position: relative;
+	box-sizing: border-box;
+	padding: auto auto auto auto;
+	margin: auto auto auto auto;
+	border-radius: 25px;
+	opacity: 0.95;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width: 90%;
+}
+
+.main {
+  padding: 0px;
+  margin: 10px 10px 10px 10px ;
+  height: auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #34495c;
+  opacity:0.6;
+}
+
+
+
+h1{
+	margin: 0;
+	color: #fff;
+	padding: 0 10 20px;
+	font-size: 22px;
+}
+
+
+</style>
+
+</html>

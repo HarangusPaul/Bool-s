@@ -8,13 +8,12 @@ firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 
-def create_Questionnaire(IdUser, IdQuestion, IdAnswer):
+def create_Questionnaire(IdUser, Question, Answer):
     doc_ref_User = db.collection("Users").document(IdUser).collection("Questionnaire").document(IdUser)
 
     doc_ref_User.set({
-        # u"IdUser": IdUser,
-        u'IdQuestion': IdQuestion,
-        u"IdAnswer": IdAnswer
+        u'Text': Question,
+        u"Answer": Answer
     })
 
 
@@ -27,17 +26,17 @@ def create_UsersPassions(IdUser, IdPassion):
     })
 
 
-def create_FacialRecognition(IdUser, IdFacePart, DistanceValue):
+def create_FacialRecognition(IdUser, Description, DistanceValue):
     doc_ref_User = db.collection("Users").document(IdUser).collection("FacialRecognition").document(IdUser)
 
     doc_ref_User.set({
         # u"IdUser": IdUser,
-        u"IdFacePart": IdFacePart,
-        u"DistanceValue": DistanceValue
+        u"Description": Description,
+        u"FacialValue": DistanceValue
     })
 
 
-def create_NewUser(IdUser, Full_Name, Age,Password, Gmail, IdQuestion, IdAnswer, IdPassion, IdFacePart, DistanceValue):
+def create_NewUser(IdUser, Full_Name, Age,Gender,Password, Gmail, IdQuestion, IdAnswer, IdPassion, IdFacePart, DistanceValue):
     doc_ref_User = db.collection("Users").document(IdUser)
 
     doc_ref_User.set({
@@ -45,6 +44,7 @@ def create_NewUser(IdUser, Full_Name, Age,Password, Gmail, IdQuestion, IdAnswer,
         u'UserName':IdUser,
         u'Full_Name': Full_Name,
         u'Password': Password,
+        u'Gender': Gender,
         u"Age": Age,
         u"Gmail": Gmail
     })
@@ -90,3 +90,29 @@ def validate_existence(UserName):
         if username == str(UserName):
             return 1
     return 0
+
+def send_Text_Answer(IdUser,Text):
+    doc_ref_User = db.collection("Users").document(IdUser).collection("Questionnaire").document(IdUser)
+
+    doc_ref_User.update({
+        "IdAnswer": Text
+    })
+
+def send_Facial_Answer(IdUser,Text):
+    doc_ref_User = db.collection("Users").document(IdUser).collection("FacialRecognition").document(IdUser)
+
+    doc_ref_User.update({
+        "FacialValue": Text
+    })
+
+def database(Username):
+    emp_ref = db.collection('Users')
+    docs = emp_ref.stream()
+
+    for doc in docs:
+        user = doc.to_dict()
+        username = str(user.get('UserName'))
+        if username == Username:
+            return user
+
+

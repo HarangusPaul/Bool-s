@@ -1,0 +1,261 @@
+<html>
+<head>
+</head>
+<link rel="stylesheet" type="text/css" href=StyleQuestions.css>
+<body>
+
+    <div class="header">
+    </div>
+
+    <div class="navbar">
+        <a href="http://127.0.0.1:5000">Home</a>
+        <a href="http://127.0.0.1:5000/questions">Questions Page</a>
+        <a href="http://127.0.0.1:5000/scan">Facial Scan Page</a>
+        <a class="right">{{n1}}</a>
+
+    </div>
+    <h2>{{n1}}</h2>
+
+    <div class="login-box" style="background:#000000; opacity:0.7; border-radius: 20px;">
+        <br>
+        <h1><strong>Your result is ready</strong></h1>
+            <br>
+            <div class="row">
+                <div0 class="column" style="background-color:#FE8A02;opacity:0.7; ">
+                    <p>{{n}}</p>
+
+                </div0>
+
+    <br>
+    </div>
+    </div>
+
+
+
+
+    <br><br>
+  <div class="footer">
+        <div class="footerbar">
+        <a href="#Copyright">Copyright @APPelle 2020</a>
+        <a href="#T&C" class="right">Terms and conditions</a>
+        <a href="#Popd" class="right">Protection of personal data</a>
+    </div></div>
+
+</body>
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("./static/WALLPAPER.jpg");
+	background-size: cover;
+	background-position: center;
+	font-family: "Times New Roman", Times, serif;
+
+
+}
+
+
+/* Header/logo Title */
+.header {
+  padding: 120px;
+  text-align: center;
+  background-image: url("./static/WWHOMEPAGE.jpg");
+  background-size: 100% 100%;
+  color: white;
+
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #001c4d;
+  position: -webkit-sticky;
+   position: sticky;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.footerbar {
+  overflow: hidden;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+
+}
+
+.footerbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Right-aligned link */
+.footerbar a.right {
+  float: right;
+}
+
+.footerbar a:hover {
+  color: #FF6701;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+  font-weight: bold;
+}
+
+div1{
+  background-color: lightgrey;
+  width: auto;
+  border: 5px solid green;
+  padding: 50px;
+  justify-content:center;
+  align-items:center;
+  margin: 20px;
+}
+.navbar a:hover {
+    color: #Fcab00;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.avatar{
+	width: 400px;
+	height: 80px;
+}
+
+h2 {
+  text-align: center;
+  color: #fa7d09;
+}
+
+p {
+  text-align: justify;
+  letter-spacing: 3px;
+   text-align: center;
+  color: #fff;
+  font-size:16px;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #DE7900;
+  color: white;
+  border-radius: 20px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+input[type=submit]:hover {
+  background-color: #053D8A;
+
+}
+input[type=text], select {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.loginbox{
+
+	height: 400%;
+	color: #fff;
+	position: relative;
+	box-sizing: border-box;
+	padding: auto auto auto auto;
+	margin: auto auto auto auto;
+	border-radius: 66px;
+	opacity: 0.95;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width: 90%;
+}
+
+.main {
+  padding: 0px;
+  margin: 10px 10px 10px 10px ;
+  height: auto;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #34495c;
+  opacity:0.6;
+}
+
+
+
+h1{
+	margin: 0;
+	color: #fff;
+	padding: 0 10 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+</style>
+
+</html>

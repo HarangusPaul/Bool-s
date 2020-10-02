@@ -2,11 +2,11 @@
 <head>
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'StyleRegister.css')}}">
 <body>
-
+	<form action="." method="POST">
 	<div class="loginbox">
 		<img src="{{url_for('static',filename = 'Logo_Appelle.png')}}" class="avatar">
 		<h1>Create an account</h1>
-		<h2>eroare</h2>
+		<h2>{{n}}</h2>
 		<form>
 			<div class="row">
   			<div class="column" style="background-color:#060517;">
@@ -38,6 +38,7 @@
 
 		</form>
 	</div>
+	</form>
 </body>
 </head>
 </html>
